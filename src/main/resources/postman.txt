@@ -1,0 +1,70 @@
+## postman url for getting all customers: http://localhost:8282/getAllCustomers
+
+## postman url for retrieving individual customer: http://localhost:8282/getCustomerById/{id}
+
+
+## json request body for adding a customer list to the database through postman
+## postman url for posting data: http://localhost:8282/addCustomers
+
+[
+    {
+        "name": "Randy",
+        "moneySpent": 100.0,
+        "rewardsTotal": 10
+    },
+    {
+        "name": "Tom",
+        "moneySpent": 310.0,
+        "rewardsTotal": 0
+    },
+    {
+        "name": "Sarah",
+        "moneySpent": 250.0,
+        "rewardsTotal": 20
+    },
+    {
+        "name": "Maddie",
+        "moneySpent": 99.0,
+        "rewardsTotal": 0
+    },
+    {
+        "name": "Brad",
+        "moneySpent": 240.0,
+        "rewardsTotal": 10
+    }
+]
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+## json request body for calculating the reward total for an individual
+## example postman url for calculating reward: http://localhost:8282/updateCustomerRewardBalance/{id}
+
+
+{
+    "name": "Randy",
+    "moneySpent": 100.0,
+    "rewardsTotal": 10
+}
+------------------------
+{
+    "name": "Tom",
+    "moneySpent": 310.0,
+    "rewardsTotal": 0
+}
+------------------------
+{
+    "name": "Sarah",
+    "moneySpent": 250.0,
+    "rewardsTotal": 20
+}
+------------------------
+{
+    "name": "Maddie",
+    "moneySpent": 99.0,
+    "rewardsTotal": 0
+}
+------------------------
+{
+    "name": "Brad",
+    "moneySpent": 240.0,
+    "rewardsTotal": 10
+}
